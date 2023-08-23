@@ -1,11 +1,14 @@
 new Vue({
     el: "#app",
     data: {
-        title: "AMir Hamja",  // string print
-        isItTrue : true,
-        robot :{
-            name :"franky"
-        }
+        // title: "AMir Hamja",  // string print
+        // isItTrue : true,
+        // robot :{
+        //     name :"franky"
+        // },
+
+        src: "https://picsum.photos/200/300",
+        alt: "This is boss"
         
         // cars :[
         //     'ford', 'toyota'
@@ -19,12 +22,22 @@ new Vue({
 
     methods: {
         
-        greeting : function(){
-            return "hello world";
+        greeting(){
+            // return "hello world";
+
+            return this.title;
         }
+
+        // greeting : function(){
+        //     return "hello world";
+        // }
 
     }
 
 
 
 })
+
+
+
+// directive 2 types er hoyea thakea
