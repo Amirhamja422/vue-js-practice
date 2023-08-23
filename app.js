@@ -5,15 +5,26 @@ new Vue({
         isItTrue : true,
         robot :{
             name :"franky"
-        },
+        }
         
-        cars :[
-            'ford', 'toyota'
-        ],
+        // cars :[
+        //     'ford', 'toyota'
+        // ],
 
-        greeting :()=>{
+        // greeting :()=>{
+        //     return "hello world";
+        // }
+
+    },
+
+    methods: {
+        
+        greeting : function(){
             return "hello world";
         }
 
     }
+
+
+
 })
