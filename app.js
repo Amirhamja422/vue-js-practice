@@ -8,8 +8,10 @@ new Vue({
         // },
 
         src: "https://picsum.photos/200/300",
-        alt: "This is boss"
-        
+        alt: "This is boss",
+        link: "https://www.google.com/",
+        myText: "This is bol",
+        myHtml: "<strong>Hello Warld</strong"
         // cars :[
         //     'ford', 'toyota'
         // ],
