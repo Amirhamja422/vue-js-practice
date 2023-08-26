@@ -17,13 +17,32 @@
       {{ greeting() }} -->
       <!-- {{ greeting() }} -->
 
-      <img v-bind:src ="src" v-bind:alt = "alt">
-<hr>
+      <!-- <img v-bind:src ="src" v-bind:alt = "alt">
+      <hr> -->
 
-      <a v-bind:href="link">Click Here</a>
+      <!-- <a v-bind:href="link">Click Here</a>
       <hr>
       <p v-text="myText"></p>
-      <p v-html="myHtml"></p>
+      <p v-html="myHtml"></p> -->
+
+
+      <!-- ## Conditional Rendering part 07-->
+
+      <!-- <p v-if="userAge >= allowedAge">
+         you are good to go
+      </p> -->
+      
+      <p v-if="changeUser()">
+        you are good to go
+     </p>
+
+     <p v-else-if ="user==='Amir hamja'" >
+      you are not good to go
+    </p>
+
+      <p v-else >
+        you are not good to go
+      </p>
 
     </div>
 
