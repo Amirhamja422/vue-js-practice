@@ -43,13 +43,13 @@ new Vue({
 
     // methods: {
 
-        // ## 1st process
+         ## 1st process
         
-        // greeting(){
-        //     // return "hello world";
+        greeting(){
+             return "hello world";
 
-        //     return this.title;
-        // }
+           return this.title;
+        }
 
          // ## 2nd process
 
