@@ -51,9 +51,9 @@
 
     <script>
       
-      function start(){
-        console.log('start');
-      }
+      // function start(){
+      //   console.log('start');
+      // }
 
      //eta ektu por run hoi
       
@@ -67,27 +67,46 @@
 
       // eta synchoronise wise run hoi callback use korle
 
-      function process(callBack){
-        setTimeout(function(){
-          console.log('process');
-        callBack();
-        },2000)
-      }
+      // function process(callBack){
+      //   setTimeout(function(){
+      //     console.log('process');
+      //   callBack();
+      //   },2000)
+      // }
 
 
             
-      function finish(){
-        console.log('finish');
-      }
+      // function finish(){
+      //   console.log('finish');
+      // }
 
-      start();
+      // start();
 
       // process();
       // finish();
 
-      process(function(){
-        finish();
-      });
+      // for callback perameter pass
+      // process(function(){
+      //   finish();
+      // });
+
+
+
+      // ## 2nd step json
+
+      var myJson = {
+        name: "Mr khan",
+        web: "www.amir@gmail.com",
+        skills: ["php,java,python"],
+        friends: [
+          {name:"khan", web:"khan@gmail.com"},
+          {name:"boss", web:"boss@gmail.com"},
+          {name:"ceo", web:"ceo@gmail.com"}
+        ]
+      };
+
+      // console.log(myJson.skills[0]);
+      console.log(myJson.friends[0].web);
 
     </script>
 
