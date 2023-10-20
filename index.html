@@ -32,7 +32,7 @@
          you are good to go
       </p> -->
       
-      <p v-if="changeUser()">
+      <!-- <p v-if="changeUser()">
         you are good to go
      </p>
 
@@ -42,16 +42,60 @@
 
       <p v-else >
         you are not good to go
-      </p>
+      </p> -->
 
 
     <!-- ## Data and attribute binding-->
-    
-
-
+  
     </div>
 
-<script src="app.js"></script>
+    <script>
+      
+      function start(){
+        console.log('start');
+      }
+
+     //eta ektu por run hoi
+      
+      // function process(){
+      //   setTimeout(function(){
+      //     console.log('process');
+
+      //   },2000)
+      // }
+
+
+      // eta synchoronise wise run hoi callback use korle
+
+      function process(callBack){
+        setTimeout(function(){
+          console.log('process');
+        callBack();
+        },2000)
+      }
+
+
+            
+      function finish(){
+        console.log('finish');
+      }
+
+      start();
+
+      // process();
+      // finish();
+
+      process(function(){
+        finish();
+      });
+
+    </script>
+
+
+
+
+
+<!-- <script src="app.js"></script> -->
 </body>
 </html>
 
