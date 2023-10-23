@@ -25,7 +25,9 @@ new Vue({
 
         user: 'Amir',
         userAge: 27,
-        allowedAge: 28
+        allowedAge: 28,
+
+        cars : ['one', 'two', 'three']
 
     }
 
