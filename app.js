@@ -23,20 +23,20 @@ new Vue({
 
         // ## Conditional Rendering part 07
 
-        user: 'Amir Hamja',
+        user: 'Amir',
         userAge: 27,
         allowedAge: 28
 
-    },
+    }
 
     // ## Conditional Rendering part 07
  
-    methods: {   
-        changeUser(){
+    // methods: {   
+    //     changeUser(){
 
-            return this.user==='Amir Hamja'? true : false;
-        }
-    }
+    //         return this.user==='Amir Hamja'? true : false;
+    //     }
+    // }
      
 
    // ## method use in vue js

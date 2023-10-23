@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Bootstrap 5 Example</title>
   <meta charset="utf-8">
@@ -7,32 +8,33 @@
   <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
 
 </head>
+
 <body>
 
-    <div id="app">
-      <!-- {{ title }}
+  <div id="app">
+    <!-- {{ title }}
       {{ isItTrue }} -->
-      <!-- {{ cars[0] }}
+    <!-- {{ cars[0] }}
       {{ robot.name }}
       {{ greeting() }} -->
-      <!-- {{ greeting() }} -->
+    <!-- {{ greeting() }} -->
 
-      <!-- <img v-bind:src ="src" v-bind:alt = "alt">
+    <!-- <img v-bind:src ="src" v-bind:alt = "alt">
       <hr> -->
 
-      <!-- <a v-bind:href="link">Click Here</a>
+    <!-- <a v-bind:href="link">Click Here</a>
       <hr>
       <p v-text="myText"></p>
       <p v-html="myHtml"></p> -->
 
 
-      <!-- ## Conditional Rendering part 07-->
+    <!-- ## Conditional Rendering part 07-->
 
-      <!-- <p v-if="userAge >= allowedAge">
+    <!-- <p v-if="userAge >= allowedAge">
          you are good to go
       </p> -->
-      
-      <!-- <p v-if="changeUser()">
+
+    <!-- <p v-if="changeUser()">
         you are good to go
      </p>
 
@@ -46,79 +48,89 @@
 
 
     <!-- ## Data and attribute binding-->
-  
-    </div>
 
-    <script>
+
+    <!--  ## Part: 8  Directives: V-show (Part: 8) -->
       
-      // function start(){
-      //   console.log('start');
-      // }
+    <p v-show ="user==='Amir'">
+      Show it
+    </p>
 
-     //eta ektu por run hoi
-      
-      // function process(){
-      //   setTimeout(function(){
-      //     console.log('process');
-
-      //   },2000)
-      // }
-
-
-      // eta synchoronise wise run hoi callback use korle
-
-      // function process(callBack){
-      //   setTimeout(function(){
-      //     console.log('process');
-      //   callBack();
-      //   },2000)
-      // }
-
-
-            
-      // function finish(){
-      //   console.log('finish');
-      // }
-
-      // start();
-
-      // process();
-      // finish();
-
-      // for callback perameter pass
-      // process(function(){
-      //   finish();
-      // });
+    <p v-show ="user==''">
+      Do not show it
+    </p>
 
 
 
-      // ## 2nd step json
-
-      // var myJson = {
-      //   name: "Mr khan",
-      //   web: "www.amir@gmail.com",
-      //   skills: ["php,java,python"],
-      //   friends: [
-      //     {name:"khan", web:"khan@gmail.com"},
-      //     {name:"boss", web:"boss@gmail.com"},
-      //     {name:"ceo", web:"ceo@gmail.com"}
-      //   ]
-      // };
-
-      // console.log(myJson.skills[0]);
-      console.log(myJson.friends[0].web);
-
-
-      // 3rd step data 
-
-    </script>
+    <!--  ## Part: 8  Directives: V-show (Part: 8) -->
 
 
 
+  </div>
+
+  <script>
+    // function start(){
+    //   console.log('start');
+    // }
+
+    //eta ektu por run hoi
+
+    // function process(){
+    //   setTimeout(function(){
+    //     console.log('process');
+
+    //   },2000)
+    // }
 
 
-<!-- <script src="app.js"></script> -->
+    // eta synchoronise wise run hoi callback use korle
+
+    // function process(callBack){
+    //   setTimeout(function(){
+    //     console.log('process');
+    //   callBack();
+    //   },2000)
+    // }
+
+
+
+    // function finish(){
+    //   console.log('finish');
+    // }
+
+    // start();
+
+    // process();
+    // finish();
+
+    // for callback perameter pass
+    // process(function(){
+    //   finish();
+    // });
+
+
+
+    // ## 2nd step json
+
+    // var myJson = {
+    //   name: "Mr khan",
+    //   web: "www.amir@gmail.com",
+    //   skills: ["php,java,python"],
+    //   friends: [
+    //     {name:"khan", web:"khan@gmail.com"},
+    //     {name:"boss", web:"boss@gmail.com"},
+    //     {name:"ceo", web:"ceo@gmail.com"}
+    //   ]
+    // };
+
+    // console.log(myJson.skills[0]);
+    // console.log(myJson.friends[0].web);
+
+  </script>
+
+  <script src="app.js"></script>
 </body>
+
 </html>
 
 
