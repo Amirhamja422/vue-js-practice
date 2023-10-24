@@ -24,12 +24,27 @@ new Vue({
         // ## Conditional Rendering part 07
 
         user: 'Amir',
-        userAge: 27,
-        allowedAge: 28,
+        // userAge: 27,
+        // allowedAge: 28,
 
-        cars : ['one', 'two', 'three']
+        // cars : ['one', 'two', 'three'],
+// obj crete
+        // users: {
+        //     name: 'amir',
+        //     age:27,
+        //     profession: 'web develop'
+        // },
 
-    }
+    },
+        methods: {
+         update(){
+            setTimeout(() =>{
+            this.user ='test'
+            },2000)
+         }
+        },
+
+    
 
     // ## Conditional Rendering part 07
  
@@ -64,7 +79,7 @@ new Vue({
 
 
 
-})
+});
 
 
 
