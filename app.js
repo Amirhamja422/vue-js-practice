@@ -24,6 +24,8 @@ new Vue({
         // ## Conditional Rendering part 07
 
         user: 'Amir',
+        x : 0,
+        y : 0,
         // userAge: 27,
         // allowedAge: 28,
 
@@ -36,13 +38,28 @@ new Vue({
         // },
 
     },
+
+   
         methods: {
          update(){
             setTimeout(() =>{
             this.user ='test'
             },2000)
-         }
+         },
+         getCord(event){
+            this.x = event.clientX;
+            this.y = event.clientY;
+    
+            }
         },
+
+        // methods: {
+        //     update(){
+        //        setTimeout(() =>{
+        //        this.user ='test'
+        //        })
+        //     }
+        //    },
 
     
 

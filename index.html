@@ -86,11 +86,26 @@
     <!--  ## Part: 10  V-once (Part: 10)-->
 
 
-     <h1>{{ user }}</h1>
+     <!-- <h1>{{ user }}</h1>
      <h1 v-once>{{ user }}</h1>
 
-       {{ update()}}
+       {{ update()}} -->
     <!--  ## Part: 10  V-once (Part: 10)-->
+
+    <!--  ## Part: 11  Event Use: V-on (Part: 11)-->
+    <!-- <h1>{{ user }}</h1>
+    <button v-on:click="update">Update</button>  -->
+
+
+    <div v-on:mousemove="getCord" class="box">
+      hover me
+    </div>
+    <p>X : {{ x }} </p>
+    <p>Y : {{ y }} </p>
+
+
+
+    <!--  ## Part: 11  Event Use: V-on (Part: 11)-->
 
 
 
@@ -158,6 +173,16 @@
 
   <script src="app.js"></script>
 </body>
+
+<style>
+  .box{
+    background-color:red;
+    height:200px;
+    width:300px;
+  }   
+  
+
+</style>
 
 </html>
 
