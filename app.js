@@ -40,18 +40,18 @@ new Vue({
     },
 
    
-        methods: {
-         update(){
-            setTimeout(() =>{
-            this.user ='test'
-            },2000)
-         },
-         getCord(event){
-            this.x = event.clientX;
-            this.y = event.clientY;
+        // methods: {
+        //  update(){
+        //     setTimeout(() =>{
+        //     this.user ='test'
+        //     },2000)
+        //  },
+        //  getCord(event){
+        //     this.x = event.clientX;
+        //     this.y = event.clientY;
     
-            }
-        },
+        //     }
+        // },
 
         // methods: {
         //     update(){
@@ -62,6 +62,14 @@ new Vue({
         //    },
 
     
+
+        methods: {
+            update(newame){
+               this.user =newame;
+            
+            }
+           }
+
 
     // ## Conditional Rendering part 07
  
