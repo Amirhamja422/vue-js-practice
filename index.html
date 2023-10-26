@@ -114,21 +114,24 @@
     <!-- <h1>{{ user }}</h1>
     <button v-on:click.left="update('Boss',$event)">Update</button> -->
 
-    <form v-on:submit.prevent="handleForm">
-
-      <label for="firstname">First Name</label>
-      <input type="text" name="lname" id="lname">
-
-      <label for="lasttname">Last Name</label>
-      <input type="text" name="fname" id="fname">
-
+    <!-- <form v-on:submit.prevent="handleForm">
+      <input type="text">
       <button type="submit">Submit</button>
-    </form>
+    </form> -->
 
     <!--  ## Part: 12  Argument (Part: 12)-->
 
     <!--  ## Part: 13  V-model  (Part: 13)-->
+    <form v-on:submit.prevent="handleForm">
 
+      <label for="firstname">First Name</label>
+      <input type="text" v-model="formData.fname">
+      <hr>
+      <label for="lasttname">Last Name</label>
+      <input type="text" v-model="formData.lname">
+       <hr>
+      <button type="submit">Submit</button>
+    </form>
 
     <!--  ## Part: 13  V-model  (Part: 13)-->
 

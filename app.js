@@ -23,14 +23,26 @@ new Vue({
 
         // ## Conditional Rendering part 07
 
-        user: 'Amir',
-        x : 0,
-        y : 0,
+        // user: 'Amir',
+        // x : 0,
+        // y : 0,
 
         formData: {
             fname: '',
+            lname: ''
             // lname: 12,
         }
+    },
+
+        methods: {
+
+            handleForm(){
+             console.log(this.formData);
+            }
+        }
+
+
+
         // userAge: 27,
         // allowedAge: 28,
 
@@ -42,7 +54,7 @@ new Vue({
         //     profession: 'web develop'
         // },
 
-    },
+   
 
    
         // methods: {
@@ -77,13 +89,13 @@ new Vue({
         //    },
 
            
-        methods: {
-           handleForm(){
-            //event.preventDefault();
-            console.log(this.formData);
+        // methods: {
+        //    handleForm(){
+        //     //event.preventDefault();
+        //     console.log(this.formData);
 
-           }
-        }
+        //    }
+        // }
 
     // ## Conditional Rendering part 07
  
