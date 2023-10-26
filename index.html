@@ -109,11 +109,33 @@
 
 
     <!--  ## Part: 12  Argument (Part: 12])-->
+    <!-- left and right are accessmodifier -->
 
-    <h1>{{ user }}</h1>
-    <button v-on:click="update('Boss')">Update</button>
+    <!-- <h1>{{ user }}</h1>
+    <button v-on:click.left="update('Boss',$event)">Update</button> -->
+
+    <form v-on:submit.prevent="handleForm">
+
+      <label for="firstname">First Name</label>
+      <input type="text" name="lname" id="lname">
+
+      <label for="lasttname">Last Name</label>
+      <input type="text" name="fname" id="fname">
+
+      <button type="submit">Submit</button>
+    </form>
 
     <!--  ## Part: 12  Argument (Part: 12)-->
+
+    <!--  ## Part: 13  V-model  (Part: 13)-->
+
+
+    <!--  ## Part: 13  V-model  (Part: 13)-->
+
+
+
+
+
 
 
 

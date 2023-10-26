@@ -26,6 +26,11 @@ new Vue({
         user: 'Amir',
         x : 0,
         y : 0,
+
+        formData: {
+            fname: '',
+            // lname: 12,
+        }
         // userAge: 27,
         // allowedAge: 28,
 
@@ -63,13 +68,22 @@ new Vue({
 
     
 
-        methods: {
-            update(newame){
-               this.user =newame;
+        // methods: {
+        //     update(newame,event){
+        //        this.user =newame;
+        //        console.log(event);
             
-            }
-           }
+        //     }
+        //    },
 
+           
+        methods: {
+           handleForm(){
+            //event.preventDefault();
+            console.log(this.formData);
+
+           }
+        }
 
     // ## Conditional Rendering part 07
  
