@@ -122,7 +122,7 @@
     <!--  ## Part: 12  Argument (Part: 12)-->
 
     <!--  ## Part: 13  V-model  (Part: 13)-->
-    <form v-on:submit.prevent="handleForm">
+    <!-- <form v-on:submit.prevent="handleForm">
 
       <label for="firstname">First Name</label>
       <input type="text" v-model="formData.fname">
@@ -131,16 +131,24 @@
       <input type="text" v-model="formData.lname">
        <hr>
       <button type="submit">Submit</button>
-    </form>
+    </form> -->
 
     <!--  ## Part: 13  V-model  (Part: 13)-->
 
 
+    <!--  ## Part: 14  Computed Property  (Part: 14)-->
+    
+     <button v-on:click="a++">Add A</button>
+     <button v-on:click="b++">Add B</button>
+
+     <p>A ={{ a }}</p>
+     <p>B={{ b }}</p>
+
+     <p>Salary + A ={{ addToA() }} </p>
+     <p>Salary + B ={{ addToB() }} </p>
 
 
-
-
-
+    <!--  ## Part: 14  Computed Property  (Part: 14)-->
 
   </div>
 

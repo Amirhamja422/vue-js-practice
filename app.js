@@ -27,20 +27,25 @@ new Vue({
         // x : 0,
         // y : 0,
 
-        formData: {
-            fname: '',
-            lname: ''
-            // lname: 12,
+   
+            a: 1,
+            b: 1,
+            salary:100
+        },
+  
+
+    methods: {
+        addToA() {
+          return this.a + this.salary;
+        },
+        addToB() {
+            return this.b + this.salary;
+    
         }
-    },
+      }
 
-        methods: {
 
-            handleForm(){
-             console.log(this.formData);
-            }
-        }
-
+   
 
 
         // userAge: 27,
