@@ -1,6 +1,6 @@
-const ap11 = new Vue({
-    el: "#app",
-    data: {
+// const ap11 = new Vue({
+    // el: "#app",
+    // data: {
         // title: "AMir Hamja",  // string print
         // isItTrue : true,
         // robot :{
@@ -27,21 +27,21 @@ const ap11 = new Vue({
         // x : 0,
         // y : 0,
 
-            value:"1st"
-        },
+    //         value:"1st"
+    //     },
 
-        methods:{
-            changeValue(){
-             ap12.value ='changed';
-            }
-        }
-    });
+    //     methods:{
+    //         changeValue(){
+    //          ap12.value ='changed';
+    //         }
+    //     }
+    // });
 
-    const ap12 = new Vue({
-        el: "#app2",
-            data: {
-                value:"2nd"
-            },
+    // const ap12 = new Vue({
+    //     el: "#app2",
+    //         data: {
+    //             value:"2nd"
+    //         },
       
     
     // methods: {
@@ -145,8 +145,36 @@ const ap11 = new Vue({
 
 
 
-});
+// });
 
 
 
+// <!--  ## Part: 17   Mount & Template  (Part: 17)-->
+const temp = `<p>this is a value two {{ value }}</p>`;
+
+const ap13 = new Vue({
+    // el: "#app3",
+        data: {
+            value:"2nd"
+        },
+
+        // template:`<p>this is a value two {{ value }}</p>`
+        template:temp
+  
+    });
+//$mount hlo built in method
+    setTimeout(()=> {
+        ap13.$mount('#app3')
+
+
+    },2000);
+
+    // <!--  ## Part: 17   Mount & Template  (Part: 17)-->
+
+
+
+
+
+
+    
 // directive 2 types er hoyea thakea
