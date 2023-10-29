@@ -11,7 +11,7 @@
 
 <body>
 
-  <div id="app">
+  <!-- <div id="app"> -->
     <!-- {{ title }}
       {{ isItTrue }} -->
     <!-- {{ cars[0] }}
@@ -51,7 +51,7 @@
 
 
     <!--  ## Part: 8  Directives: V-show (Part: 8) -->
-      
+
     <!-- <p v-show ="user==='Amir'">
       Show it
     </p>
@@ -67,16 +67,16 @@
 
 
     <!--  ## Part: 9 Loop: V-for (Part: 9 -->
-     <!-- <p v-for="(car, index) in cars">
+    <!-- <p v-for="(car, index) in cars">
       {{ index }} :{{ car }}
      </p> -->
 
-     <!-- <p v-for="(value, index, key) in users">
+    <!-- <p v-for="(value, index, key) in users">
       {{ key }} {{ index }} : {{ value }}
      </p> -->
 
 
-     <!-- <p v-for="n in 80">
+    <!-- <p v-for="n in 80">
       {{ n }} {{ index }}
      </p> -->
 
@@ -86,7 +86,7 @@
     <!--  ## Part: 10  V-once (Part: 10)-->
 
 
-     <!-- <h1>{{ user }}</h1>
+    <!-- <h1>{{ user }}</h1>
      <h1 v-once>{{ user }}</h1>
 
        {{ update()}} -->
@@ -137,8 +137,8 @@
 
 
     <!--  ## Part: 14  Computed Property  (Part: 14)-->
-    
-     <!-- <button v-on:click="a++">Add A</button>
+
+    <!-- <button v-on:click="a++">Add A</button>
      <button v-on:click="b++">Add B</button>
 
      <p>A ={{ a }}</p>
@@ -151,17 +151,17 @@
     <!--  ## Part: 14  Computed Property  (Part: 14)-->
 
     <!--  ## Part: 15  Shorthand  (Part: 15)-->
-      <!-- v-on: == @ -->
+    <!-- v-on: == @ -->
 
-      <!-- v-bind: == : -->
+    <!-- v-bind: == : -->
 
-      <!-- v-model shorthand nei -->
+    <!-- v-model shorthand nei -->
 
     <!--  ## Part: 15  Shorthand  (Part: 15)-->
 
 
     <!--  ## Part: 16  Create More Instance  (Part: 16)-->
-     <!-- <p>this is a value first {{ value }}</p>
+    <!-- <p>this is a value first {{ value }}</p>
      <button @click="changeValue">click</button>
 
     </div> -->
@@ -170,87 +170,95 @@
       <p>this is a value two {{ value }}</p>
 
     </div> -->
-      <!--  ## Part: 16  Create More Instance  (Part: 16)-->
-
-      <!--  ## Part: 17   Mount & Template  (Part: 17)-->
-
-      <div id ="app3">
-  
-      </div>
-      <!--  ## Part: 17   Mount & Template  (Part: 17)-->
-
-
-  <script>
-    // function start(){
-    //   console.log('start');
-    // }
-
-    //eta ektu por run hoi
-
-    // function process(){
-    //   setTimeout(function(){
-    //     console.log('process');
-
-    //   },2000)
-    // }
-
-
-    // eta synchoronise wise run hoi callback use korle
-
-    // function process(callBack){
-    //   setTimeout(function(){
-    //     console.log('process');
-    //   callBack();
-    //   },2000)
-    // }
+    <!--  ## Part: 16  Create More Instance  (Part: 16)-->
 
 
 
-    // function finish(){
-    //   console.log('finish');
-    // }
+    <!--  ## Part: 17   Mount & Template  (Part: 17)-->
 
-    // start();
+    <!-- <div id="app3">
 
-    // process();
-    // finish();
-
-    // for callback perameter pass
-    // process(function(){
-    //   finish();
-    // });
+    </div> -->
+    <!--  ## Part: 17   Mount & Template  (Part: 17)-->
 
 
 
-    // ## 2nd step json
+    <!--  ## Part: 18   Use of Basic Component (Part: 18)-->
+<!-- </div> -->
+    <div id="app">
+      <test></test>
+    </div>
+    <!--  ## Part: 18   Use of Basic Component  (Part: 18)-->
 
-    // var myJson = {
-    //   name: "Mr khan",
-    //   web: "www.amir@gmail.com",
-    //   skills: ["php,java,python"],
-    //   friends: [
-    //     {name:"khan", web:"khan@gmail.com"},
-    //     {name:"boss", web:"boss@gmail.com"},
-    //     {name:"ceo", web:"ceo@gmail.com"}
-    //   ]
-    // };
 
-    // console.log(myJson.skills[0]);
-    // console.log(myJson.friends[0].web);
+    <script>
+      // function start(){
+      //   console.log('start');
+      // }
 
-  </script>
+      //eta ektu por run hoi
 
-  <script src="app.js"></script>
+      // function process(){
+      //   setTimeout(function(){
+      //     console.log('process');
+
+      //   },2000)
+      // }
+
+
+      // eta synchoronise wise run hoi callback use korle
+
+      // function process(callBack){
+      //   setTimeout(function(){
+      //     console.log('process');
+      //   callBack();
+      //   },2000)
+      // }
+
+
+
+      // function finish(){
+      //   console.log('finish');
+      // }
+
+      // start();
+
+      // process();
+      // finish();
+
+      // for callback perameter pass
+      // process(function(){
+      //   finish();
+      // });
+
+
+
+      // ## 2nd step json
+
+      // var myJson = {
+      //   name: "Mr khan",
+      //   web: "www.amir@gmail.com",
+      //   skills: ["php,java,python"],
+      //   friends: [
+      //     {name:"khan", web:"khan@gmail.com"},
+      //     {name:"boss", web:"boss@gmail.com"},
+      //     {name:"ceo", web:"ceo@gmail.com"}
+      //   ]
+      // };
+
+      // console.log(myJson.skills[0]);
+      // console.log(myJson.friends[0].web);
+    </script>
+
+    <script src="app.js"></script>
 </body>
 
 <style>
-  .box{
-    background-color:red;
-    height:200px;
-    width:300px;
-  }   
-  
-
+  .box {
+    background-color: red;
+    height: 200px;
+    width: 300px;
+  }
 </style>
 
 </html>
