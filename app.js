@@ -1,4 +1,4 @@
-new Vue({
+const ap11 = new Vue({
     el: "#app",
     data: {
         // title: "AMir Hamja",  // string print
@@ -27,22 +27,32 @@ new Vue({
         // x : 0,
         // y : 0,
 
-   
-            a: 1,
-            b: 1,
-            salary:100
+            value:"1st"
         },
-  
 
-    methods: {
-        addToA() {
-          return this.a + this.salary;
-        },
-        addToB() {
-            return this.b + this.salary;
-    
+        methods:{
+            changeValue(){
+             ap12.value ='changed';
+            }
         }
-      }
+    });
+
+    const ap12 = new Vue({
+        el: "#app2",
+            data: {
+                value:"2nd"
+            },
+      
+    
+    // methods: {
+    //     addToA() {
+    //       return this.a + this.salary;
+    //     },
+    //     addToB() {
+    //         return this.b + this.salary;
+    
+    //     }
+    //   }
 
 
    
