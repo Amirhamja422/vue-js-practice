@@ -158,23 +158,81 @@
 // <!--  ## Part: 18  Use of Basic Component  (Part: 18)-->
 
 
-Vue.component('test', {
-    data() {
-      return {
-        name: 'amir',
-      };
-    },
+// Vue.component('test', {
+//     data() {
+//       return {
+//         name: 'amir',
+//       };
+//     },
   
-    template: `<p>{{name}}</p>`,
-  })
+//     template: `<p>{{name}}</p>`,
+//   })
   
-  new Vue({
-    el: "#app"
-  });
+//   new Vue({
+//     el: "#app"
+//   });
   
 
 
 // <!--  ## Part: 18   Use of Basic Component (Part: 18)-->
+
+
+// <!--  ## Part: 19  Lifecycle of Vue JS(Part: 19)-->
+
+  new Vue({
+    el: "#app",
+    data:{
+      name: 'amir'
+    },
+
+    methods: {
+      updateName() {
+        this.name = 'khan';
+        
+      },
+      killIt(){
+        this.$destroy();
+      }
+
+    },
+
+  mounted(){
+   console.log('running mounted');
+  },
+
+  beforeCreate(){
+    console.log('running before created');
+   },
+
+   created(){
+    console.log('running created');
+   },
+
+   beforeMount(){
+    console.log('running before mount');
+   },
+
+   mounted(){
+    console.log('running mounted');
+   },
+
+   beforeUpdated(){
+    console.log('before updated');
+   },
+   updated(){
+    console.log('updated');
+   },
+   beforeDestroy() {
+    console.log('before destroyed');
+   },
+  destroyed(){
+    console.log('destroyed');
+  }
+   
+
+});
+
+// <!--  ## Part: 19  Lifecycle of Vue JS (Part: 19)-->
 
 
 
