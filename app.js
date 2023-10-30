@@ -181,9 +181,11 @@
 
   new Vue({
     el: "#app",
-    data:{
+    data:function() {
+return {
       name: 'amir'
-    },
+    };
+},
 
     methods: {
       updateName() {
@@ -222,10 +224,10 @@
    updated(){
     console.log('updated');
    },
-   beforeDestroy() {
+   beforeUnmount() {
     console.log('before destroyed');
    },
-  destroyed(){
+  unmounted(){
     console.log('destroyed');
   }
    
